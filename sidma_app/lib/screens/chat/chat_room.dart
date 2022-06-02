@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sipfaa_app/models/message_model.dart';
-import 'package:sipfaa_app/widget/conversation.dart';
+import 'package:sidma_app/models/message_model.dart';
+import 'package:sidma_app/widget/conversation.dart';
 import '../../widget/chat_bar.dart';
 
 class ChatRoom extends StatefulWidget {
@@ -28,11 +28,11 @@ class _ChatRoomState extends State<ChatRoom> {
           color: Colors.white,
         ),
         toolbarHeight: 130,
-        backgroundColor: Color(0xff809b7b),
+        backgroundColor: Color(0xff7C7B9B),
         title: Row(
           children: [
             const CircleAvatar(
-              backgroundColor: Color(0xff809b7b),
+              backgroundColor: Color(0xff7C7B9B),
               radius: 30,
               backgroundImage: AssetImage("assets/robot.png"),
             ),
@@ -42,9 +42,9 @@ class _ChatRoomState extends State<ChatRoom> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                Text('SIPFAA Assistant'),
+                Text('SIDMA Assistant'),
                 Text(
-                  'Chat With SIPFAA',
+                  'Chat With SIDMA',
                   style: TextStyle(fontSize: 12),
                 ),
               ],
@@ -53,7 +53,7 @@ class _ChatRoomState extends State<ChatRoom> {
         ),
         elevation: 0,
       ),
-      backgroundColor: const Color(0xff809b7b),
+      backgroundColor: const Color(0xff7C7B9B),
       body: Column(
         children: [
           Expanded(

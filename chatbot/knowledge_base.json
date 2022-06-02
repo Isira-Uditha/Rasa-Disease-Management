@@ -1,0 +1,42 @@
+{
+    "diseases": [
+        {
+            "id": 0,
+            "name": "wilt",
+            "type": "virus",
+            "spread": true,
+            "description" : "Wilt disease\n\nThe wilt disease is thought to be caused by a virus transmitted by mealybugs (Dysmicoccus brevipes). The mealybugs feed on an infected plant and then move to other plants with the help of ants or wind. Wilt is transmitted when the mealybug feeds on young leaves. The amount of wilt in a field is related to the number of mealybugs present, the length time they feed and the activity of ants.",
+            "symptoms": ["leaves turned in to red colour","leaf margins rolls under, starting from the tips","leaves change from red to pink","leaves about half way up the plant redden slightly"],
+            "solutions": ["always select healthy planting material","if less than 3% of plants show wilt symptoms, pull up affected plants by hand and destroy them",
+                "if more than 3% of plants show wilt symptoms, implement the recommended mealybug control spray program.",
+                "if more than 10% of plants show wilt symptoms, not use the field as a source of planting material.",
+                "keep headlands and field boundaries free of weeds, fallen timber and rubbish, as these encourage populations of ants and mealybugs."]
+        },
+        {
+            "id": 1,
+            "name": "rootrot",
+            "type": "fungus",
+            "spread": true,
+            "description" : "Root rot disease\n\nRoot rot is caused by P. cinnamomi only. All leaves show colour changes similar to those caused by heart rot. The outer leaves also become limp and die back from the tips. Once this happens, the root system is dead and plants can easily be pulled from the ground. Fruit from diseased plants are small and unmarketable. Plants can recover if symptoms are recognised early and treated immediately. However, if roots are destroyed right back to the stem, they cannot regenerate.",
+            "symptoms": ["leaves edge roll under and eventually die","leaves edge turned brown and eventually die","leaves can easily pulled","leavse turned in to yellow or light colour"],
+            "solutions": ["good drainage is essential to minimise the risk of phytophthora infection","install underground drains ",
+                "construct drains within the field to remove water rapidly without causing erosion",
+                "use plastic mulch carefully to keep beds drier. Soil-applied fungicides are of questionable value if used with plastic mulch, as soil contact is reduced.",
+                "in areas where phytophthora occurs. fungicides must be used regularly.",
+                "start the fungicide program by treating planting material before planting takes place."]
+        },
+        {
+            "id": 2,
+            "name": "mealybug",
+            "type": "pest attack",
+            "spread": true,
+            "description" : "Mealy bug attack\n\nThe Mealy bug is thought to be caused by a virus transmitted by mealybugs (Dysmicoccus brevipes). The mealybugs feed on an infected plant and then move to other plants with the help of ants or wind. Wilt is transmitted when the mealybug feeds on young leaves. The amount of wilt in a field is related to the number of mealybugs present, the length time they feed and the activity of ants.\n\nAbove-ground symptoms appear some time after the mealybugs have fed and develop most rapidly on young plants. Visible symptoms may take between 3 and 8 months to develop. Plants which have recovered and do not show obvious symptoms can still be sources of infection.",
+            "symptoms": ["white colored insects are found","mealybugs may infest the roots, butt, stem, leaves, flowers and fruit"],
+            "solutions": ["the main problem caused by mealybugs is the transmission of mealybug wilt. See page 18 for mealybug wilt control program.",
+                "mealybug populations seldom reach levels where they directly damage plants by their feeding. If this occurs, implement the recommended mealybug spray program.",
+                "natural enemies of mealybugs generally have little impact on mealybugs in Queensland pineapples."]
+        }
+
+    ]
+
+}

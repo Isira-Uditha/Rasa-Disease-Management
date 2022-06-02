@@ -1,0 +1,177 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: options
+    examples: |
+      - what do you do?
+      - how can you help?
+      - what do you know?
+      - what is your purpose?
+
+  - intent: disease_types
+    examples: |
+      - what are the pineapple diseases?
+      - what are the disease in pineapple cultivation?
+      - what types of diseases occur in pineapple?
+      - I want to know about pineapple diseases
+      - can you tell me about pineapple diseases?
+
+  # - intent: wilt
+  #   examples: |
+  #     - i want to know about pineapple wilt.
+  #     - what is pineapple wilt?
+  #     - can you tell me about pineapple wilt?
+  #     - is that a wilt is a pineapple diseas.
+
+  # - intent: smp_wilt
+  #   examples: |
+  #     - plants turned in to red
+  #     - leaves get red in colour
+  #     - leaves about half way up the plant redden slightly
+  #     - leaves change from red to pink
+  #     - leaf margins rolls under, starting from the tips
+
+  # - intent: spread_wilt
+  #   examples: |
+  #     - is it spreading?
+  #     - will it spreads?
+  #     - will it spread to the other plants?
+  #     - will wilt disease spread to the other plants?
+
+  # - intent: stop_wilt
+  #   examples: |
+  #     - how can i stop that?
+  #     - how can i manage the wilt disease?
+  #     - how can i stop spreading the wilt disease?
+  #     - how can i avoid it?
+  #     - how can i avoid pineapple wilt?
+
+  - intent: inquire_disease
+    examples: |
+      - what is [wilt](disease) disease?
+      - what is [root rot](disease) disease?
+      - tell me about [mealy bug](disease) disease
+      - what do you know about [root rot](disease) disease?
+      - please tell me about [wilt](disease) disease
+      - please tell me about [mealy bug](disease) disease
+
+  - intent: inquire_spreading
+    examples: |
+      - is that [wilt](disease) disease spreads?
+      - is that [root rot](disease) spreads?
+      - will [mealy bug](disease) disease spreads?  
+      - will [root rot](disease) spreads to the other plants?
+      - is it [mealy bug](disease) spreading?
+      - will it [root rot](disease) spreads?
+      - will it [wilt](disease) spread to the other plants?
+
+  - intent: inquire_symptoms
+    examples: |
+      - what are the symptoms of [wilt](disease) disease?
+      - what are the symptoms of [root rot](disease)?
+      - tell me about the symptoms of [mealy bug](disease) disease
+      - please tell me about the symptoms of [mealy bug](disease)
+
+  - intent: inquire_solutions
+    examples: |
+      - what are the solutions for [mealy bug](disease) disease?
+      - what are the solutions for [wilt](disease)?
+      - are there any solutions for [root rot](disease) disease?
+      - let me know the solutions for [mealy bug](disease) disease
+      - how can i stop [wilt](disease) that?
+      - how can i avoid [root rot](disease) it?
+
+  - lookup: disease
+    examples: |
+      - wilt
+      - root rot
+      - mealy bug

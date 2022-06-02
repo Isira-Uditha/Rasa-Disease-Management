@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sipfaa_app/screens/home.dart';
+import 'package:sidma_app/screens/chat/chat_room.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SIPFAA',
+      title: 'SIDMA',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0xff809b7b),
 
       ),
-      home: const MyHomePage(title: 'SIPFAA'),
+      home: const MyHomePage(title: 'SIDMA'),
     );
   }
 }
@@ -36,6 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Home();
+    return const ChatRoom();
   }
 }

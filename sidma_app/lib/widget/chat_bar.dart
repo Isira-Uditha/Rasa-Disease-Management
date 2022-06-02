@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:sipfaa_app/models/response.dart';
+import 'package:sidma_app/models/response.dart';
 
 Container buildChatBar({required Function(dynamic message, dynamic check) callbackFunction}) {
   final TextEditingController _requestController = TextEditingController();
@@ -65,7 +65,7 @@ Container buildChatBar({required Function(dynamic message, dynamic check) callba
           width: 16,
         ),
         const CircleAvatar(
-          backgroundColor: Color(0xff809b7b),
+          backgroundColor: Color(0xff7C7B9B),
           child: Icon(
             Icons.mic,
             color: Colors.white,

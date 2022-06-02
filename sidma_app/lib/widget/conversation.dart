@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:sipfaa_app/models/message_model.dart';
+import 'package:sidma_app/models/message_model.dart';
 class Conversation extends StatefulWidget {
   final List<Message> getMessageList;
   const Conversation({Key? key, required this.getMessageList}) : super(key: key);
@@ -29,7 +29,7 @@ class _ConversationState extends State<Conversation> {
                       backgroundImage:
                       AssetImage("assets/robot.png"),
                       radius: 16,
-                      backgroundColor: Color(0xff809b7b),
+                      backgroundColor: Color(0xffFCAAAB),
                     ),
                   const SizedBox(
                     width: 10,
@@ -43,7 +43,7 @@ class _ConversationState extends State<Conversation> {
                             0.6),
                     decoration: BoxDecoration(
                         color: isMe
-                            ? const Color(0xd5809b7b)
+                            ? const Color(0xffFCAAAB)
                             : Colors.grey[200],
                         borderRadius: BorderRadius.only(
                           topLeft: const Radius.circular(16),
