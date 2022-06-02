@@ -1,7 +1,7 @@
 version: "3.1"
 
 stories:
-  - story: story wilt
+  - story: story 1
     steps:
       - intent: greet
       - action: utter_greet
@@ -9,28 +9,23 @@ stories:
       - action: utter_option
       - intent: disease_types
       - action: utter_disease_types
+      - intent: thanks
+      - action: utter_thanks
 
-  - story: story wilt 2
+  - story: story 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: disease_types
+      - action: utter_disease_types
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: story 4
     steps:
       - intent: greet
       - action: utter_greet
       - intent: options
       - action: utter_option
-      - intent: disease_types
-      - action: utter_disease_types
-
-  - story: story wilt 3
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: know_wilt
-      - action: utter_wilt
-
-  - story: story wilt 4
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: options
-      - action: utter_option
-      - intent: disease_types
-      - action: utter_disease_types
+      - intent: thanks
+      - action: utter_thanks

@@ -11,7 +11,7 @@ Container buildChatBar({required Function(dynamic message, dynamic check) callba
 
   Future getResponse(String message) async{
     var res = <Response>[];
-    var url = Uri.parse('http://192.168.232.165/webhooks/rest/webhook');
+    var url = Uri.parse('http://192.168.1.3/webhooks/rest/webhook');
     var response = await http.post(url, body: jsonEncode(<String, String>{'sender': '' , 'message': message}));
     Iterable list = json.decode(response.body);
     res = list.map((model) => Response.fromJson(model)).toList();

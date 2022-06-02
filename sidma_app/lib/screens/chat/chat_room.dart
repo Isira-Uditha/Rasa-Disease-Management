@@ -31,24 +31,52 @@ class _ChatRoomState extends State<ChatRoom> {
         backgroundColor: Color(0xff7C7B9B),
         title: Row(
           children: [
-            const CircleAvatar(
-              backgroundColor: Color(0xff7C7B9B),
-              radius: 30,
-              backgroundImage: AssetImage("assets/robot.png"),
+            Flexible(
+              flex: 4,
+              fit: FlexFit.tight,
+              child: Row(
+                children: [
+                  const CircleAvatar(
+                    backgroundColor: Color(0xff7C7B9B),
+                    radius: 30,
+                    backgroundImage: AssetImage("assets/robot.png"),
+                  ),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text('SIDMA Assistant'),
+                      Text(
+                        'Chat With SIDMA',
+                        style: TextStyle(fontSize: 12),
+                      ),
+                    ],
+                  ),
+                ],
+              ), //Container
             ),
-            const SizedBox(
-              width: 20,
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                Text('SIDMA Assistant'),
-                Text(
-                  'Chat With SIDMA',
-                  style: TextStyle(fontSize: 12),
+            Flexible(
+              flex: 1,
+              fit: FlexFit.tight,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ChatRoom()),
+                  );
+                },
+                child: CircleAvatar(
+                  backgroundColor: Color(0xff7C7B9B),
+                  child: Icon(
+                    Icons.refresh,
+                    color: Colors.white,
+                  ),
                 ),
-              ],
+              ),//Container
             ),
+
           ],
         ),
         elevation: 0,

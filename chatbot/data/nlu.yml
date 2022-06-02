@@ -99,79 +99,55 @@ nlu:
 
   - intent: disease_types
     examples: |
-      - what are the pineapple diseases?
-      - what are the disease in pineapple cultivation?
-      - what types of diseases occur in pineapple?
-      - I want to know about pineapple diseases
-      - can you tell me about pineapple diseases?
-
-  # - intent: wilt
-  #   examples: |
-  #     - i want to know about pineapple wilt.
-  #     - what is pineapple wilt?
-  #     - can you tell me about pineapple wilt?
-  #     - is that a wilt is a pineapple diseas.
-
-  # - intent: smp_wilt
-  #   examples: |
-  #     - plants turned in to red
-  #     - leaves get red in colour
-  #     - leaves about half way up the plant redden slightly
-  #     - leaves change from red to pink
-  #     - leaf margins rolls under, starting from the tips
-
-  # - intent: spread_wilt
-  #   examples: |
-  #     - is it spreading?
-  #     - will it spreads?
-  #     - will it spread to the other plants?
-  #     - will wilt disease spread to the other plants?
-
-  # - intent: stop_wilt
-  #   examples: |
-  #     - how can i stop that?
-  #     - how can i manage the wilt disease?
-  #     - how can i stop spreading the wilt disease?
-  #     - how can i avoid it?
-  #     - how can i avoid pineapple wilt?
+      - what are the types of human diseases?
+      - what are the types of diseases you know?
+      - what are the disease you know?
+      - what types of diseases occur in human body?
+      - I want to know about human diseases 
+      - can you tell me about human diseases?
 
   - intent: inquire_disease
     examples: |
-      - what is [wilt](disease) disease?
-      - what is [root rot](disease) disease?
-      - tell me about [mealy bug](disease) disease
-      - what do you know about [root rot](disease) disease?
-      - please tell me about [wilt](disease) disease
-      - please tell me about [mealy bug](disease) disease
+      - what is [diabetes](disease) disease?
+      - what is [high blood pressure](disease) disease?
+      - tell me about [diabetes](disease) disease
+      - what do you know about [high blood pressure](disease) disease?
+      - please tell me about [diabetes](disease) disease
+      - please tell me about [high blood pressure](disease) disease
 
   - intent: inquire_spreading
     examples: |
-      - is that [wilt](disease) disease spreads?
-      - is that [root rot](disease) spreads?
-      - will [mealy bug](disease) disease spreads?  
-      - will [root rot](disease) spreads to the other plants?
-      - is it [mealy bug](disease) spreading?
-      - will it [root rot](disease) spreads?
-      - will it [wilt](disease) spread to the other plants?
+      - is that [diabetes](disease) disease spreads?
+      - is that [high blood pressure](disease) spreads?
+      - will [diabetes](disease) disease spreads?  
+      - will [high blood pressure](disease) spreads to the other humans?
+      - is it [diabetes](disease) spreading?
+      - will it [high blood pressure](disease) spreads?
+      - will it [diabetes](disease) spread to the other humans?
 
   - intent: inquire_symptoms
     examples: |
-      - what are the symptoms of [wilt](disease) disease?
-      - what are the symptoms of [root rot](disease)?
-      - tell me about the symptoms of [mealy bug](disease) disease
-      - please tell me about the symptoms of [mealy bug](disease)
+      - what are the symptoms of [diabetes](disease) disease?
+      - what are the symptoms of [high blood pressure](disease)?
+      - tell me about the symptoms of [diabetes](disease) disease
+      - please tell me about the symptoms of [high blood pressure](disease)
 
   - intent: inquire_solutions
     examples: |
-      - what are the solutions for [mealy bug](disease) disease?
-      - what are the solutions for [wilt](disease)?
-      - are there any solutions for [root rot](disease) disease?
-      - let me know the solutions for [mealy bug](disease) disease
-      - how can i stop [wilt](disease) that?
-      - how can i avoid [root rot](disease) it?
+      - what are the solutions for [diabetes](disease) disease?
+      - what are the solutions for [high blood pressure](disease)?
+      - are there any solutions for [diabetes](disease) disease?
+      - let me know the solutions for [high blood pressure](disease) disease
+      - how can i stop [diabetes](disease) that?
+      - how can i avoid [high blood pressure](disease) it?
+
+  - intent: thanks
+    examples: |
+      - thanks!
+      - thank you so much!
+      - thank you!
 
   - lookup: disease
     examples: |
-      - wilt
-      - root rot
-      - mealy bug
+      - diabetes
+      - high blood pressure
