@@ -1,4 +1,4 @@
-# SIDMA - Smart Inteligent Disease Managment System
+# SIDMA - Smart Intelligent Disease Management Assitant
 
 This is a conversational AI developed using the RASA framework, which is required to provide remadial actions for human diseases. Moreover, this is connected with a knowledge base that consists of disease details, and it has the ability to acquire the knowledge base using custom action. The UI of this application was developed using Flutter and connected to the backend using a REST.
 
